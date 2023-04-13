@@ -9,15 +9,27 @@ html {
     scroll-behavior: smooth;
 }
 
-/* .head_container {
+.head_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    right: 0;
+}
+
+.brand_container {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-} */
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
 
-.brand{
-    display: flex;
-    justify-content: center;
+.logo img {
+    width: auto;
+    height: 100px;
+}
+
+.brand {
     font-size: 62px;
     font-family: 'Pacifico';
     font-style: italic;
@@ -26,16 +38,15 @@ html {
     color: black;
 }
 
-.nav_container{
+.nav_bar{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-content: center;
+    align-items: baseline;
     overflow: hidden;
-    margin-right: 15px;
+    margin: 0 15px 0 auto;
 }
 
-.nav_container a{
+.nav_bar a{
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
@@ -45,7 +56,7 @@ html {
     color: black;
 }
 
-.nav_container a::after{
+.nav_bar a::after{
     content: '';
     display: block;
     position: absolute;
@@ -59,8 +70,31 @@ html {
     transition: transform 0.25s ease-out;
 }
 
-.nav_container a:hover::after{
+.nav_bar a:hover::after{
     transform: scaleX(1);
     transform-origin: center;
 }
 
+.nav_container {
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.search_bar {
+    font-family:'Montserrat', sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.search_bar input {
+    margin-left: 15px;
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 1px solid grey;
+    background-color: transparent;
+    border-radius: 20px;
+}

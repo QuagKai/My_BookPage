@@ -43,7 +43,7 @@ html {
     flex-flow: row nowrap;
     align-items: baseline;
     overflow: hidden;
-    margin: 0 15px 0 auto;
+    margin: 0 15px 0 0;
 }
 
 .nav_bar a{
@@ -77,28 +77,35 @@ html {
 }
 
 .nav_container {
-    margin: 0 0 0 auto;
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     flex-grow: 1;
 }
 
 .search_bar {
     font-family:'Montserrat', sans-serif;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+    flex-grow: 1;
+    margin-left: 100px;
     margin-right: 15px;
-    width: 50%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 4rem;
+    box-shadow: 0 4px 0 4px hsla(222, 68%, 12%, .1);
 }
 
 .search_bar input {
-    margin-left: 15px;
     font-size: 100%;
     padding: 0.8em;
     outline: none;
     border: 1px solid grey;
     background-color: transparent;
     border-radius: 20px;
-    width: 80%;
+    width: 100%;
+}
+
+.search_bar input::placeholder{
+    
+    width: fit-content;
 }

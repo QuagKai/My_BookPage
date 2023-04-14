@@ -54,6 +54,7 @@ html {
     font-size: 24px;
     font-family:'Montserrat', sans-serif;
     color: black;
+    white-space: nowrap;
 }
 
 .nav_bar a::after{
@@ -79,6 +80,7 @@ html {
     margin: 0 0 0 auto;
     display: flex;
     align-items: center;
+    flex-grow: 1;
 }
 
 .search_bar {
@@ -87,6 +89,7 @@ html {
     flex-flow: row nowrap;
     justify-content: flex-end;
     margin-right: 15px;
+    width: 50%;
 }
 
 .search_bar input {
@@ -97,4 +100,5 @@ html {
     border: 1px solid grey;
     background-color: transparent;
     border-radius: 20px;
+    width: 80%;
 }

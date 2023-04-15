@@ -5,24 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav_container">
-        <a class="logo" href="index.html">My portfolio</a>
-        <span class="nav_bar">
-            <a href="index.html">Home</a>
-            <a href="Activities/index.html">Activities</a>
-            <a href="Education/index.html">Education</a>
-            <a href="Contact/index.html">Contact</a>
-        </span>
-    </div>
-
-    <div class="content">
-        <div class="background_image1">
-            <img src="assets/images/360_F_210626304_asFbznBXrt7ZR9TuxdH7KocnM5JeCg6c.jpg" alt="marble">
+    <header>
+        <div class="head_container">
+            <div class="brand_container">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/kisspng-vector-graphics-book-stock-illustration-logo-research-vector-book-transparent-amp-png-clipart-5cce8c440022e9.3914588515570401960006.png" alt="Book Logo"></a>
+                </div>
+                <div>
+                    <a class="brand" href="index.html">Space Aiqk</a>
+                </div>
+            </div>
+            <div class="nav_container">
+                <div class= "search_container">
+                    <div class="search_bar">
+                        <input type="text" class="search_input" placeholder="What are you looking for ?" value="">
+                        <div class="search_button">
+                            <i class="ri-search-line search_icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_bar">
+                    <a href="index.html">Home</a>
+                    <a href="Catergory/index.html">Catergory</a>
+                    <a href="Book_Detail/index.html">Book Detail</a>
+                    <a href="Contact/index.html">Contact</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
     
+    <script>
+        const searchInput = document.querySelector('.search_input');
+        searchInput.addEventListener('blur', function() {
+        searchInput.value = '';
+        })
+    </script>
 </body>
 </html>

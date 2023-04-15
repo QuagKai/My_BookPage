@@ -20,11 +20,12 @@
                 </div>
             </div>
             <div class="nav_container">
-                <div class="search_bar">
-                    <input type="text" placeholder="What are you looking for ?">
-                    <div class="search_button">
-                        <!-- <i class="ri-search-line search_icon"></i>
-                        <i class="ri-close-fill search_close"></i> -->
+                <div class= "search_container">
+                    <div class="search_bar">
+                        <input type="text" class="search_input" placeholder="What are you looking for ?" value="">
+                        <div class="search_button">
+                            <i class="ri-search-line search_icon"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="nav_bar">
@@ -36,5 +37,12 @@
             </div>
         </div>
     </header>
+    
+    <script>
+        const searchInput = document.querySelector('.search_input');
+        searchInput.addEventListener('blur', function() {
+        searchInput.value = '';
+        })
+    </script>
 </body>
 </html>

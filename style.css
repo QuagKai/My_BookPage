@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Bree+Serif&family=Headland+One&family=Lora&family=Roboto+Serif&family=Sawarabi+Mincho&display=swap');
 
 :root {
     --box-shadow: hsla(222, 68%, 12%, .1);
     --green-pastel: hsl(130, 86%, 73%);
+    --blue-bold: rgb(12, 14, 105);
+    --albescent-white: rgb(243,229,208);
+    --albescent-white1: rgb(240, 221, 194);
+    --white-linen: rgb(238,231,220);
+    --fantasy: #fff1e8;
+}
+
+*{
+    font-family:'Montserrat', sans-serif;
 }
 
 body{
-    background-color: var(--green-pastel);
+    background-color: var(--albescent-white1);
     margin: 0 0 0 0;
 }
 
@@ -57,7 +67,6 @@ html {
     text-transform: uppercase;
     margin: 0 15px 0 15px ;
     font-size: 24px;
-    font-family:'Montserrat', sans-serif;
     color: black;
     white-space: nowrap;
 }
@@ -114,7 +123,6 @@ input[type="text" i] {
 
 
 .search_container .search_input{
-    font-family: 'Montserrat', sans-serif;
     position: absolute;
     width: 48px;
     height: 48px;
@@ -166,16 +174,76 @@ input[type="text" i] {
     transition: opacity 1s ease-in;
 }
 
-#catergory1_container {
-    
+
+#category1_header {
+    padding-bottom: 1.5rem;
+    text-align: center;
 }
 
-#catergory1_header {
+#category1_header a {
+    font-size: 34px;
     color: black;
-    font-family:'Montserrat', sans-serif;
     text-decoration: none;
-
 }
+
+ #category1 {
+    width: 100%;
+ }
+
+.category1_content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.booktype1 {
+    /* background-color: aqua; */
+    width: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.books{
+    width: calc(100%/3 - 60px);
+    height: auto;
+    background: var(--fantasy);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.card{
+    width: 100%;
+}
+
+.image-content img {
+    width: 100%;
+}
+
+.image-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.books .card .name{
+    padding: 5px 0px;
+}
+
+.books .card .name a{
+    font-size: 20px;
+    font-family: 'Bree Serif';
+    text-decoration: none;
+    color: var(--blue-bold);
+}
+
+.books .card .descrip{
+    font-size: 16px;
+    font-family: 'Adamia';
+    color: black;
+}
+
 
 @media only screen and (max-width: 1404px) {
     .search_container {

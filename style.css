@@ -9,6 +9,11 @@
     --albescent-white1: rgb(240, 221, 194);
     --white-linen: rgb(238,231,220);
     --fantasy: #fff1e8;
+    --ham-gap: 6px;
+    --ham-side: calc(var(--ham-gap) * 5);
+    --ham-side2: calc(var(--ham-gap) * 4);
+    --sqrt2: 1.41421356237;
+    --ham-diagonal-side: calc(var(--ham-side) * var(--sqrt2));
 }
 
 *{
@@ -174,6 +179,20 @@ input[type="text" i] {
     transition: opacity 1s ease-in;
 }
 
+.hamburger_menu {
+    display: none;
+}
+
+.side_bar {
+    display: none;
+}
+
+.side_bar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
 
 #category1_header {
     padding-bottom: 1.5rem;
@@ -187,6 +206,9 @@ input[type="text" i] {
 }
 
  #category1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
  }
 
@@ -194,19 +216,18 @@ input[type="text" i] {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    width: 100%;
+    width: 60%;
 }
 
 .booktype1 {
     /* background-color: aqua; */
-    width: 60%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .books{
-    width: calc(100%/3 - 60px);
     height: auto;
     background: var(--fantasy);
     padding: 1rem;
@@ -244,6 +265,12 @@ input[type="text" i] {
     color: black;
 }
 
+@media only screen and (max-width: 1600px) {
+    .search_container {
+        width: 100%;
+        margin-left: 100px;
+    }
+}
 
 @media only screen and (max-width: 1404px) {
     .search_container {
@@ -253,10 +280,125 @@ input[type="text" i] {
     }
 }
 
-@media only screen and (max-width: 1280px) {
-    .search_container {
-        flex-basis: 280px;
+
+@media only screen and (max-width: 1300px) {
+    .nav_bar, .search_container {
+        display: none;
+    }
+
+    .category1_content {
         width: 100%;
-        margin-left: 50px;
+    }
+    
+
+    .hamburger_menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .hamburger_icon {
+        display: flex;
+        flex-direction: column;
+        gap: var(--ham-gap);
+        z-index: 2;
+    }
+
+    .hamburger_icon input {
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
+    }
+
+    .hamburger_icon input,
+    .hamburger_icon::before,
+    .hamburger_icon::after{
+        content: '';
+        width: var(--ham-side);
+        height: var(--ham-gap);
+        border-radius: 100rem;
+        background-color: black;
+        transform: left center;
+        transition: opacity 0.2s, width 0.2s, rotate 0.2s, translate 0.2s;
+    }
+
+    .hamburger_icon:has(input:checked)::before{
+        rotate: 45deg;
+        width: var(--ham-diagonal-side);
+        translate: 0 calc(var(--ham-side2)/2);
+    }
+    
+    .hamburger_icon:has(input:checked)::after{
+        rotate: -45deg;
+        width: var(--ham-diagonal-side);
+        translate: 0 calc(var(--ham-side2)/-2);
+    }
+
+    .hamburger_icon:has(input:checked)::before,
+    .hamburger_icon:has(input:checked)::after{
+        margin-right: 7.58;
+    }
+
+    .hamburger_icon input:checked{
+        
+        opacity: 0;
+        width: 0;
+    }
+
+    .side_bar {
+        display: initial;
+        position: fixed;
+        width: 200px;
+        height: 3000px;
+        margin: 3000px 0 0 0;
+        padding: 205px 10px 50px 50px;
+        right: 0;
+        background: var(--albescent-white1);
+        z-index: 0;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        
+    }
+    
+    .side_bar div {
+        padding: 10px 0;
+    }
+
+    .links a {
+        font-size: 22;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    .hamburger_icon:has(input:checked:focus){
+        position: fixed;
+    }
+
+    .hamburger_menu .hamburger_icon:has(input:checked) ~ .side_bar{
+        transform: none;
+        opacity: 1;
+    }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+    .logo img {
+        width: auto;
+        height: 50px;
+    }
+
+    .brand {
+        font-size: 42px;
+        font-family: 'Pacifico';
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
     }
 }

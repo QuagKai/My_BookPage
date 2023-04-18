@@ -224,14 +224,14 @@ input[type="text" i] {
 .category1_content {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     width: 60%;
 }
 
 .booktype1 {
-    /* background-color: aqua; */
     width: 100%;
     display: grid;
-    gap: 3rem;
+    gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -339,7 +339,6 @@ input[type="text" i] {
         margin-left: 50px;
     }
 }
-
 
 @media only screen and (max-width: 1300px) {
     .nav_bar, .search_container {
@@ -458,6 +457,34 @@ input[type="text" i] {
     }
 
 
+}
+
+@media only screen and (max-width: 1100px) {
+    .category1_content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 100%;
+        width: 332px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 0 16px;
+    }
+
+    .booktype1 {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+    
+    .books{
+        width: 100%;
+    }
+
+    .card {
+        width: 300px;
+        scroll-snap-align: center;
+    }
 }
 
 @media only screen and (max-width: 550px) {

@@ -107,6 +107,11 @@ html {
     width: 100%;
 }
 
+.fa-solid {
+    color: black;
+    margin: 0 15px 0 15px;
+}
+
 input[type="text" i] {
     padding: 0px 0px;
 }
@@ -219,7 +224,6 @@ input[type="text" i] {
 .category1_content {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
     width: 60%;
 }
 
@@ -239,7 +243,10 @@ input[type="text" i] {
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
 }
 
 .image-content img {
@@ -253,7 +260,7 @@ input[type="text" i] {
 }
 
 .books .card .name{
-    padding: 10px 0px;
+    padding: 10px 0 0 0;
 }
 
 .books .card .name a{
@@ -263,21 +270,22 @@ input[type="text" i] {
     color: var(--blue-bold);
 }
 
-.books .card .price {
-    padding: 10px 0px;
-    font-size: 26px;
-}
 
 .books .card .descrip{
     font-size: 16px;
     font-family: 'Adamia';
     color: black;
+    padding: 10px 0px;
 }
 
-.purchase {
-    position: relative;
-    bottom: 10px;
-    width: 100%;
+.bottom-card p {
+    margin: 0;
+    font-size: 26px;
+    padding: 10px 0 0 0;
+}
+
+.bottom-card {
+    margin-top: auto;
 }
 
 .addcart {
@@ -285,17 +293,14 @@ input[type="text" i] {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    position: absolute;
 }
 
-
 .cart {
-    text-align: center;
-    text-align: center;
     height: 39px;
     width: 100%;
-    background: var(--cart-color);
-    border-color: var(--border-cart); 
+    background-color: var(--cart-color);
+    border: none;
+    outline: 2px;
     border-radius: 4rem;
 }
 
@@ -307,12 +312,17 @@ input[type="text" i] {
 }
 
 .buy{
-    text-align: center;
     height: 39px;
     width: 100%;
     background: var(--buy-color);
-    border-color: var(--border-buy-color); 
+    border: none;
     border-radius: 4rem;
+}
+
+@media only screen and (max-width: 1680px) {
+    .category1_content {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1600px) {
@@ -402,7 +412,7 @@ input[type="text" i] {
     .side_bar {
         display: initial;
         position: fixed;
-        width: 200px;
+        width: 250px;
         height: 3000px;
         margin: 3000px 0 0 0;
         padding: 205px 10px 50px 50px;
@@ -416,12 +426,25 @@ input[type="text" i] {
     }
     
     .side_bar div {
-        padding: 10px 0;
+        padding: 15px 0;
     }
 
     .links a {
-        font-size: 22;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: baseline;
+    }
+
+    .links i{
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    
+    .links .span-text {
+        font-family:'Montserrat', sans-serif;
+        font-size: 22px;
         text-transform: uppercase;
+        padding-left: 10px;
         z-index: 1;
     }
 

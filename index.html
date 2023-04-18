@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/376e778cdd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -28,16 +29,139 @@
                         </div>
                     </div>
                 </div>
+                <label class="hamburger_menu">
+                    <label class="hamburger_icon">
+                        <input type="checkbox">
+                    </label>
+                    <aside class="side_bar">
+                        <div class="links">
+                            <a href="index.html">
+                                <span>
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+                                <span class="span-text">Home</span>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="Catergory/index.html">
+                                <span>
+                                    <i class="fa-solid fa-shapes fa-1.25x"></i>
+                                </span>
+                                <span class="span-text">Catergory</span>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="Book_Detail/index.html">
+                                <span>
+                                    <i class="fa-solid fa-book fa-lg"></i>
+                                </span>
+                                <span class="span-text">Book Details</span>
+                            </a>  
+                        </div>
+                        <div class="links">
+                            <a href="Contact/index.html">
+                                <span>
+                                    <i class="fa-solid fa-address-book fa-lg"></i>
+                                </span>
+                                <span class="span-text">Contact</span>
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="#">
+                                <span>
+                                    <i class="fa-sharp fa-solid fa-bag-shopping fa-lg"></i>
+                                </span>
+                                <span class="span-text">Shopping Cart</span>
+                            </a>
+                        </div>
+                    </aside>
+                </label>
                 <div class="nav_bar">
                     <a href="index.html">Home</a>
                     <a href="Catergory/index.html">Catergory</a>
                     <a href="Book_Detail/index.html">Book Detail</a>
                     <a href="Contact/index.html">Contact</a>
+                    <i class="fa-sharp fa-solid fa-bag-shopping fa-xl"></i>
                 </div>
             </div>
         </div>
     </header>
-    
+    <content>
+        <div id="category1">
+            <div id="category1_header">
+                <a href="#">Business & Investing</a>
+            </div>
+            <div class="category1_content">
+                <div class="booktype1">
+                    <div class="books">
+                        <div class="card">
+                            <div class="image-content" >
+                                <span class="overlay"></span>
+                                <img src="assets/images/81bsw6fnUiL.jpg" alt="RichDadPoorDad" class="card-image">
+                            </div>
+                            <div class="name"> 
+                                <a href="#" class="book">Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!</a>
+                            </div>
+                            <div class="descrip">by Robert T. Kiyosaki (Author)</div>
+                            <div class="bottom-card">
+                                <p>$8.99</p>
+                                <div class="purchase">
+                                    <div class="addcart">
+                                        <button class="cart">Add to cart</button>
+                                    </div>
+                                    <div class="buynow">
+                                        <button class="buy">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="card">
+                            <div class="image-content" >
+                                <span class="overlay"></span>
+                                <img src="assets/images/71SqvmjaM3L.jpg" alt="Rework" class="card-image">
+                            </div>
+                            <div class="name"> <a href="#" class="book">Rework</a> </div>
+                            <div class="descrip">by Jason Fried (Author), David Heinemeier Hansson (Author)</div>
+                            <div class="bottom-card">
+                                    <p>$25.11</p>
+                                <div class="purchase">
+                                    <div class="addcart">
+                                        <button class="cart">Add to cart</button>
+                                    </div>
+                                    <div class="buynow">
+                                        <button class="buy">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="card">
+                            <div class="image-content" >
+                                <span class="overlay"></span>
+                                <img src="assets/images/81oUPEIf6OL.jpg" alt="Never Split the Difference" class="card-image">
+                            </div>
+                            <div class="name"> <a href="#" class="book">Never Split the Difference: Negotiating As If Your Life Depended On It</a> </div>
+                            <div class="descrip">by Chris Voss (Author), Tahl Raz (Author)</div>
+                            <div class="bottom-card">
+                                <p>$35.00</p>
+                                <div class="purchase">
+                                    <div class="addcart">
+                                        <button class="cart">Add to cart</button>
+                                    </div>
+                                    <div class="buynow">
+                                        <button class="buy">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </content>
     <script>
         const searchInput = document.querySelector('.search_input');
         searchInput.addEventListener('blur', function() {

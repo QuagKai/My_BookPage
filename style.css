@@ -89,6 +89,11 @@ html {
     width: 100%;
 }
 
+.fa-sharp {
+    color: black;
+    margin: 0px 15px;
+}
+
 input[type="text" i] {
     padding: 0px 0px;
 }

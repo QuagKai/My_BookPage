@@ -14,6 +14,10 @@
     --ham-side2: calc(var(--ham-gap) * 4);
     --sqrt2: 1.41421356237;
     --ham-diagonal-side: calc(var(--ham-side) * var(--sqrt2));
+    --cart-color: #ffd814;
+    --border-cart: #FCD200;
+    --buy-color: #FFA41C;
+    --border-buy-color: #FF8F00;
 }
 
 *{
@@ -249,20 +253,66 @@ input[type="text" i] {
 }
 
 .books .card .name{
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 
 .books .card .name a{
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Bree Serif';
     text-decoration: none;
     color: var(--blue-bold);
+}
+
+.books .card .price {
+    padding: 10px 0px;
+    font-size: 26px;
 }
 
 .books .card .descrip{
     font-size: 16px;
     font-family: 'Adamia';
     color: black;
+}
+
+.purchase {
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+}
+
+.addcart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    position: absolute;
+}
+
+
+.cart {
+    text-align: center;
+    text-align: center;
+    height: 39px;
+    width: 100%;
+    background: var(--cart-color);
+    border-color: var(--border-cart); 
+    border-radius: 4rem;
+}
+
+.buynow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.buy{
+    text-align: center;
+    height: 39px;
+    width: 100%;
+    background: var(--buy-color);
+    border-color: var(--border-buy-color); 
+    border-radius: 4rem;
 }
 
 @media only screen and (max-width: 1600px) {

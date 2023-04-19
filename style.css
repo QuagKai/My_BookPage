@@ -203,6 +203,36 @@ input[type="text" i] {
 }
 
 
+/* 'news' part design */
+.news {
+    position: relative;
+    width: 100%;
+    background-color: aqua;
+}
+
+.background-content{
+    position: absolute;
+    border-radius: 0;
+    width: 100%;
+    opacity: 1;
+    padding: 1rem;
+}
+
+.background-content img{
+    border-radius: 2rem;
+    object-fit: cover;
+    width: 100%;
+    height: 26rem;
+    opacity: 0.8;
+}
+
+#category1 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 #category1_header {
     padding-bottom: 1.5rem;
     text-align: center;
@@ -213,13 +243,6 @@ input[type="text" i] {
     color: black;
     text-decoration: none;
 }
-
- #category1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
- }
 
 .category1_content {
     display: flex;
@@ -240,6 +263,7 @@ input[type="text" i] {
     background: var(--fantasy);
     padding: 1rem;
     border-radius: 20px;
+    width: 100%;
 }
 
 .card{
@@ -264,7 +288,7 @@ input[type="text" i] {
 }
 
 .books .card .name a{
-    font-size: 22px;
+    font-size: 2.2vh;
     font-family: 'Bree Serif';
     text-decoration: none;
     color: var(--blue-bold);
@@ -272,7 +296,7 @@ input[type="text" i] {
 
 
 .books .card .descrip{
-    font-size: 16px;
+    font-size: 1.7vh;
     font-family: 'Adamia';
     color: black;
     padding: 10px 0px;
@@ -412,8 +436,8 @@ input[type="text" i] {
         display: initial;
         position: fixed;
         width: 250px;
-        height: 3000px;
-        margin: 3000px 0 0 0;
+        height: 1000vw;
+        margin: 1000vw 0 0 0;
         padding: 205px 10px 50px 50px;
         right: 0;
         background: var(--albescent-white1);

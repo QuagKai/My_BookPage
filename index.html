@@ -90,23 +90,55 @@
         <!-- The background-images class is used from unsplash -->
         <!-- The images of books is from Amazon -->
         <div class="news">
-            <div class="background-content">
-                <img src="assets/images/thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg" alt="background-image" class="background-images">
-            <!-- </div>
-            <div class="background-content">
-                <img src="" alt="background-image" class="background-images">
+            <div id="news_header">
+                <a href="#">News</a>
             </div>
             <div class="background-content">
-                <img src="" alt="background-image" class="background-images">
-            </div> -->
+                <div class="background-card">
+                    <div class="backgrounds" id="background-1">
+                        <img src="assets/images/thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg" alt="Cement background" class="background-images">
+                        <div class="hot-books">
+                            <div>
+                                <p class="quotes">“What matters isn't what a person has or doesn't have; it is what he or she is afraid of losing.”</p>
+                                <p class="name-quotes">― Nassim Nicholas Taleb, Skin in the Game: Hidden Asymmetries in Daily Life</p>
+                            </div>
+                            <img src="assets/images/71dlDoPPyyL.jpg" alt="Skin in the game">
+                        </div>
+                    </div>
+                    <div class="backgrounds" id="background-2">
+                        <img src="assets/images/wesley-tingey--Irs24DzLxM-unsplash.jpg" alt="Cement background" class="background-images">
+                        <div class="hot-books">
+                            <div>
+                                <p class="quotes">“Customers won't care about any particular technology unless it solves a particular problem in a superior way. And if you can't monopolize a unique solution for a small market, you'll be stuck with vicious competition.”</p>
+                                <p class="name-quotes">― Peter Thiel, Zero to One: Notes on Startups, or How to Build the Future</p>
+                            </div>
+                            <img src="assets/images/71Xygne8+qL.jpg" alt="Zero to One">
+                        </div>
+                    </div>
+                    <div class="backgrounds" id="background-3">
+                        <img src="assets/images/joe-woods-4Zaq5xY5M_c-unsplash.jpg" alt="Wall background" class="background-images">
+                        <div class="hot-books">
+                            <div>
+                                <p class="quotes">“The only way to win is to learn faster than anyone else.”</p>
+                                <p class="name-quotes">― Eric Ries, The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</p>
+                            </div>
+                            <img src="assets/images/81-QB7nDh4L.jpg" alt="The Lean Startup">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- The images of books is from Amazon -->
+        
+        <!-- First category -->
         <div id="category1">
             <div id="category1_header">
                 <a href="#">Business & Investing</a>
             </div>
             <div class="category1_content">
                 <div class="booktype1">
+
+                    <!-- Product 1 -->
                     <div class="books">
                         <div class="card">
                             <div class="image-content" >
@@ -130,6 +162,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Product 2 -->
                     <div class="books">
                         <div class="card">
                             <div class="image-content" >
@@ -151,6 +185,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Product 3 -->
                     <div class="books">
                         <div class="card">
                             <div class="image-content" >
@@ -176,11 +212,56 @@
             </div>
         </div>   
     </content>
+    <footer>
+        <div class="column">
+            <div class="row">
+              
+                <!--Logo Start-->
+                <div class="col-brand">
+                    <div class="brand_container" id="col1">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/kisspng-vector-graphics-book-stock-illustration-logo-research-vector-book-transparent-amp-png-clipart-5cce8c440022e9.3914588515570401960006.png" alt="Book Logo"></a>
+                        </div>
+                        <div>
+                            <a class="brand" href="index.html">Space Aiqk</a>
+                        </div>
+                    </div>
+                    <div><p class="copy-right"> Copyright © 2008-2019 RPX Corporation. All Rights Reserved.</p></div>
+                </div>
+                <!--Logo end-->
+            
+                <!--Quick links Start-->
+              <div class="col ">
+               <h5 class="header-footer"> Quick links </h5>
+                <ul class="list-links">
+                  <li class="items">Partner</li>
+                  <li class="items">Team Developer</li>
+                  <li class="items">Contributor</li>
+                </ul>
+              </div>
+              <!--Quick links end-->
+             
+              <!--Other Start-->
+              <div class="col">
+               <h5 class="header-footer"> Other </h5>
+                <ul class="list-links">
+                  <li class="items">Privacy Policy</li>
+                  <li class="items">Terms of Use</li>
+                  <li class="items">Features</li>
+                  <li class="items">Success Stories</li>
+                  <li class="items"><a href="Contact/index.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <!--Other end-->
+            </div>
+          
+        </div>
+    </footer>
     <script>
         const searchInput = document.querySelector('.search_input');
         searchInput.addEventListener('blur', function() {
         searchInput.value = '';
-        })
+        });
     </script>
 </body>
 </html>

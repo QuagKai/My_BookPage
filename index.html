@@ -42,20 +42,23 @@
                                 <span class="span-text">Home</span>
                             </a>
                         </div>
-                        <div class="links">
-                            <a href="Catergory/index.html">
-                                <span>
-                                    <i class="fa-solid fa-shapes fa-1.25x"></i>
-                                </span>
-                                <span class="span-text">Catergory</span>
-                            </a>
+                        <div class="links dropdown">
+                            <span>
+                                <i class="fa-solid fa-shapes fa-1.25x"></i>
+                            </span>
+                            <label for="category-toggle" class="dropdown-label">Category</label>
+                            <input type="checkbox" id="category-toggle" class="dropdown-toggle">
+                            <div class="dropdown-content">
+                                <a href="Catergory/BUSINESS & INVESTING/index.html">Business & Investing</a>
+                                <a href="Catergory/PSYCHOLOGY/index.html">Psychology</a>
+                            </div>
                         </div>
                         <div class="links">
-                            <a href="Book_Detail/index.html">
+                            <a href="Team/index.html">
                                 <span>
                                     <i class="fa-solid fa-book fa-lg"></i>
                                 </span>
-                                <span class="span-text">Book Details</span>
+                                <span class="span-text">Team</span>
                             </a>  
                         </div>
                         <div class="links">
@@ -77,22 +80,77 @@
                     </aside>
                 </label>
                 <div class="nav_bar">
-                    <a href="index.html">Home</a>
-                    <a href="Catergory/index.html">Catergory</a>
-                    <a href="Book_Detail/index.html">Book Detail</a>
-                    <a href="Contact/index.html">Contact</a>
+                    <a href="index.html" class="nav-items">Home</a>
+                    <!-- ChatGPT design html for dropdown menu in default size start here -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-items">Category</a>
+                        <div class="dropdown-content">
+                          <a href="Catergory/BUSINESS & INVESTING/index.html">Business & Investing</a>
+                          <a href="Catergory/PSYCHOLOGY/index.html">Psychology</a>
+                        </div>
+                    </div>
+                    <!-- ChatGPT design html for dropdown menu in default size end here -->
+                    <a href="Team/index.html" class="nav-items">Team</a>
+                    <a href="Contact/index.html" class="nav-items">Contact</a>
                     <i class="fa-sharp fa-solid fa-bag-shopping fa-xl"></i>
                 </div>
             </div>
         </div>
     </header>
     <content>
-        <div id="category1">
-            <div id="category1_header">
+        <!-- The background-images class is used from unsplash -->
+        <!-- The images of books is from Amazon -->
+        <!-- Design 'News' part -->
+        <div class="news">
+            <div id="news_header">
+                <a href="#">News</a>
+            </div>
+            <div class="background-content">
+                <div class="background-card">
+                    <div class="backgrounds" id="background-1">
+                        <img src="assets/images/thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg" alt="Cement background" class="background-images">
+                        <div class="hot-books">
+                            <div>
+                                <p class="quotes">“What matters isn't what a person has or doesn't have; it is what he or she is afraid of losing.”</p>
+                                <p class="name-quotes">― Nassim Nicholas Taleb, Skin in the Game: Hidden Asymmetries in Daily Life</p>
+                            </div>
+                            <img src="assets/images/71dlDoPPyyL.jpg" alt="Skin in the game">
+                        </div>
+                    </div>
+                    <div class="backgrounds" id="background-2">
+                        <img src="assets/images/wesley-tingey--Irs24DzLxM-unsplash.jpg" alt="Cement background" class="background-images">
+                        <div class="hot-books">
+                            <div>
+                                <p class="quotes">“Customers won't care about any particular technology unless it solves a particular problem in a superior way. And if you can't monopolize a unique solution for a small market, you'll be stuck with vicious competition.”</p>
+                                <p class="name-quotes">― Peter Thiel, Zero to One: Notes on Startups, or How to Build the Future</p>
+                            </div>
+                            <img src="assets/images/71Xygne8+qL.jpg" alt="Zero to One">
+                        </div>
+                    </div>
+                    <div class="backgrounds" id="background-3">
+                        <img src="assets/images/joe-woods-4Zaq5xY5M_c-unsplash.jpg" alt="Wall background" class="background-images">
+                        <div class="hot-books">
+                            <div>
+                                <p class="quotes">“The only way to win is to learn faster than anyone else.”</p>
+                                <p class="name-quotes">― Eric Ries, The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</p>
+                            </div>
+                            <img src="assets/images/81-QB7nDh4L.jpg" alt="The Lean Startup">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The images of books is from Amazon -->
+        
+        <!-- First category -->
+        <div id="category">
+            <div id="category_header">
                 <a href="#">Business & Investing</a>
             </div>
-            <div class="category1_content">
-                <div class="booktype1">
+            <div class="category_content">
+                <div class="booktype">
+
+                    <!-- Product 1 -->
                     <div class="books">
                         <div class="card">
                             <div class="image-content" >
@@ -116,6 +174,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Product 2 -->
                     <div class="books">
                         <div class="card">
                             <div class="image-content" >
@@ -137,6 +197,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Product 3 -->
                     <div class="books">
                         <div class="card">
                             <div class="image-content" >
@@ -160,13 +222,140 @@
                     </div>
                 </div>
             </div>
+            
+            <!--Second Category-->
+            <div id="category">
+                <div id="category_header">
+                    <a href="#">Psychology</a>
+                </div>
+                <div class="category_content">
+                    <div class="booktype">
+    
+                        <!-- Product 1 -->
+                        <div class="books">
+                            <div class="card">
+                                <div class="image-content" >
+                                    <span class="overlay"></span>
+                                    <img src="assets/images/719ThX10pEL.jpg" alt="Everything Is F*cked" class="card-image">
+                                </div>
+                                <div class="name"> 
+                                    <a href="#" class="book">Everything Is F*cked: A Book About Hope</a>
+                                </div>
+                                <div class="descrip">by Mark Manson (Author)</div>
+                                <div class="bottom-card">
+                                    <p>$19.29</p>
+                                    <div class="purchase">
+                                        <div class="addcart">
+                                            <button class="cart">Add to cart</button>
+                                        </div>
+                                        <div class="buynow">
+                                            <button class="buy">Buy now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Product 2 -->
+                        <div class="books">
+                            <div class="card">
+                                <div class="image-content" >
+                                    <span class="overlay"></span>
+                                    <img src="assets/images/61fdrEuPJwL.jpg" alt="Thinking, Fast and Slow" class="card-image">
+                                </div>
+                                <div class="name"><a href="#" class="book">Thinking, Fast and Slow</a></div>
+                                <div class="descrip">by Daniel Kahneman (Author)</div>
+                                <div class="bottom-card">
+                                        <p>$19.49</p>
+                                    <div class="purchase">
+                                        <div class="addcart">
+                                            <button class="cart">Add to cart</button>
+                                        </div>
+                                        <div class="buynow">
+                                            <button class="buy">Buy now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Product 3 -->
+                        <div class="books">
+                            <div class="card">
+                                <div class="image-content" >
+                                    <span class="overlay"></span>
+                                    <img src="assets/images/71vzpPj921L.jpg" alt="The Tipping Point" class="card-image">
+                                </div>
+                                <div class="name"><a href="#" class="book">The Tipping Point: How Little Things Can Make a Big Difference</a></div>
+                                <div class="descrip">by Malcolm Gladwell (Author)</div>
+                                <div class="bottom-card">
+                                    <p>$18.29</p>
+                                    <div class="purchase">
+                                        <div class="addcart">
+                                            <button class="cart">Add to cart</button>
+                                        </div>
+                                        <div class="buynow">
+                                            <button class="buy">Buy now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>   
     </content>
+    <footer>
+        <div class="footer-content">
+            <div class="row">
+              
+                <!--Logo Start-->
+                <div class="col-brand">
+                    <div class="brand_container" id="col1">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/kisspng-vector-graphics-book-stock-illustration-logo-research-vector-book-transparent-amp-png-clipart-5cce8c440022e9.3914588515570401960006.png" alt="Book Logo"></a>
+                        </div>
+                        <div>
+                            <a class="brand" href="index.html">Space Aiqk</a>
+                        </div>
+                    </div>
+                    <div><p class="copy-right"> Copyright © 2022-2023 Space Aiqk Corporation. All Rights Reserved.</p></div>
+                </div>
+                <!--Logo end-->
+            
+                <!--Quick links Start-->
+              <div class="col ">
+               <h5 class="header-footer"> Quick links </h5>
+                <ul class="list-links">
+                  <li class="items">Partner</li>
+                  <li class="items">Team Developer</li>
+                  <li class="items">Contributor</li>
+                </ul>
+              </div>
+              <!--Quick links end-->
+             
+              <!--Other Start-->
+              <div class="col">
+               <h5 class="header-footer"> Other </h5>
+                <ul class="list-links">
+                  <li class="items">Privacy Policy</li>
+                  <li class="items">Terms of Use</li>
+                  <li class="items">Features</li>
+                  <li class="items">Success Stories</li>
+                  <li class="items"><a href="Contact/index.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <!--Other end-->
+            </div>
+          
+        </div>
+    </footer>
     <script>
         const searchInput = document.querySelector('.search_input');
         searchInput.addEventListener('blur', function() {
         searchInput.value = '';
-        })
+        });
     </script>
 </body>
 </html>

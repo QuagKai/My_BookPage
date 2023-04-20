@@ -42,20 +42,23 @@
                                 <span class="span-text">Home</span>
                             </a>
                         </div>
-                        <div class="links">
-                            <a href="Catergory/index.html">
-                                <span>
-                                    <i class="fa-solid fa-shapes fa-1.25x"></i>
-                                </span>
-                                <span class="span-text">Catergory</span>
-                            </a>
+                        <div class="links dropdown">
+                            <span>
+                                <i class="fa-solid fa-shapes fa-1.25x"></i>
+                            </span>
+                            <label for="category-toggle" class="dropdown-label">Category</label>
+                            <input type="checkbox" id="category-toggle" class="dropdown-toggle">
+                            <div class="dropdown-content">
+                                <a href="Catergory/BUSINESS & INVESTING/index.html">Business & Investing</a>
+                                <a href="Catergory/PSYCHOLOGY/index.html">Psychology</a>
+                            </div>
                         </div>
                         <div class="links">
-                            <a href="Book_Detail/index.html">
+                            <a href="Team/index.html">
                                 <span>
                                     <i class="fa-solid fa-book fa-lg"></i>
                                 </span>
-                                <span class="span-text">Book Details</span>
+                                <span class="span-text">Team</span>
                             </a>  
                         </div>
                         <div class="links">
@@ -77,10 +80,18 @@
                     </aside>
                 </label>
                 <div class="nav_bar">
-                    <a href="index.html">Home</a>
-                    <a href="Catergory/index.html">Catergory</a>
-                    <a href="Book_Detail/index.html">Book Detail</a>
-                    <a href="Contact/index.html">Contact</a>
+                    <a href="index.html" class="nav-items">Home</a>
+                    <!-- ChatGPT design html for dropdown menu in default size start here -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-items">Category</a>
+                        <div class="dropdown-content">
+                          <a href="Catergory/BUSINESS & INVESTING/index.html">Business & Investing</a>
+                          <a href="Catergory/PSYCHOLOGY/index.html">Psychology</a>
+                        </div>
+                    </div>
+                    <!-- ChatGPT design html for dropdown menu in default size end here -->
+                    <a href="Team/index.html" class="nav-items">Team</a>
+                    <a href="Contact/index.html" class="nav-items">Contact</a>
                     <i class="fa-sharp fa-solid fa-bag-shopping fa-xl"></i>
                 </div>
             </div>
@@ -89,6 +100,7 @@
     <content>
         <!-- The background-images class is used from unsplash -->
         <!-- The images of books is from Amazon -->
+        <!-- Design 'News' part -->
         <div class="news">
             <div id="news_header">
                 <a href="#">News</a>
@@ -308,7 +320,7 @@
                             <a class="brand" href="index.html">Space Aiqk</a>
                         </div>
                     </div>
-                    <div><p class="copy-right"> Copyright © 2008-2019 RPX Corporation. All Rights Reserved.</p></div>
+                    <div><p class="copy-right"> Copyright © 2022-2023 Space Aiqk Corporation. All Rights Reserved.</p></div>
                 </div>
                 <!--Logo end-->
             

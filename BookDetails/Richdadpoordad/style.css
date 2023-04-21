@@ -272,7 +272,7 @@ DESIGN PRODUCT SHOWCASE
 }
 
 .slider-query{
-    width: 90%;
+    width: 70%;
     height: auto;
     overflow-x: scroll;
 }
@@ -324,19 +324,19 @@ DESIGN PRODUCT SHOWCASE
 .slider-main{
     position: relative;
     width: 100%;
-    min-height: 600px;
+    min-height: 77.5vh;
 }
 
 .slider-main .main-images{
     position: absolute;
     inset: 0;
-    max-height: 600px;
+    height: 100%;
 }
 
 .slider-main .main-images img{
     object-fit: cover;
     width: 100%;
-    max-height: 600px;
+    height: 100%;
     border-radius: 0.2rem;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -366,6 +366,11 @@ DESIGN PRODUCT SHOWCASE
   transition: opacity 1s ease-in-out;
 }
 
+.slider-query:has(#queries5:checked) ~ .slider-main #main-images5 img {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
 
 .product-descrip h1 {
     font-family: var(--Bree-Serif);
@@ -384,7 +389,7 @@ DESIGN PRODUCT SHOWCASE
 }
 
 .product-descrip p:nth-of-type(1) {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .product-descrip strong {
@@ -789,6 +794,10 @@ MAKE RESPONSIVE WEBSITE START
 
     .items {
         width: 10rem;
+    }
+
+    .slider-main .main-images{
+        inset: 0 2rem ;
     }
 
     .product-showcase{

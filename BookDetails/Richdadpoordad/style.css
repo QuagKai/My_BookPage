@@ -249,6 +249,12 @@ input[type="text" i] {
 DESIGN PRODUCT SHOWCASE
 =======================
 */
+
+.link-to-page {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
 .product {
     margin: 5rem 15rem;
     display: flex;

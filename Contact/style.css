@@ -95,6 +95,11 @@ DESIGN MNAVIGATION BAR START
     white-space: nowrap;
 }
 
+.nav_bar a:nth-of-type(4){
+    transform: translateY(-35%);
+}
+
+
 .nav_bar .nav-items::after{
     content: '';
     display: block;

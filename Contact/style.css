@@ -253,6 +253,46 @@ input[type="text" i] {
     font-size: 20px;
 }
 
+.menu_search {
+    position: relative;
+}
+
+.menu_input {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    color: rgb(0, 0, .9);
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, .9);
+    outline: none;
+    background: transparent;
+}
+
+.menu_titles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: rgb(0, 0, .9);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.menu_search .menu_input:focus ~ .menu_titles,
+.menu_search .menu_input:valid ~ .menu_titles {
+    top: -18px;
+    left: 0;
+    font-size: 0.8rem;
+} 
+
+.menu_search .menu_input:not(:focus) ~ .menu_titles,
+.menu_search .menu_input:not(:valid) ~ .menu_titles {
+    top: 0px;
+    font-size: 1rem;
+}
+
 /*
 =======================
 DESIGN CONTACT FORM
